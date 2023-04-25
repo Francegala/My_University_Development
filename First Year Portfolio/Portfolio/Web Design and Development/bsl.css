@@ -1,0 +1,265 @@
+/*           Author: Francesco Galassi Student No 170492959                 */
+
+/*This section set the background color of the webpage and the core typeface */
+body {
+  background-color: #C7C1C1; /* this is the hex code for the grey background */
+/*As written in: "https://www.w3schools.com/cssref/css_websafe_fonts.asp",
+  this is the font stack provided as alternative if these are not available
+  on the client in order to ensure maximum compatibility*/
+  font-family: "Palatino Linotype", "Book Antiqua", "Palatino", serif;
+ }
+
+/* Code to put a little space between the text in the content and the border */
+ p{
+   padding-left: 10px;
+   padding-right: 10px;
+ }
+
+/*All the headings have some common features such as a "blue" color instead
+  of the default black and a different font*/
+ h1,h2,h3{
+   padding-left: 10px;
+   padding-right: 10px;
+   color:#004B83;
+   font-family:  "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+ }
+
+/* All the breaks must have a height */
+ hr{
+   border: 5px solid #124C77;
+ }
+
+/* The main content should be centered with a different background color */
+#container{
+  position: relative;
+  background-color: #FFFFFF;
+  min-width:510px;
+  max-width:960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 45px;
+}
+
+/* CSS to create a navigation bar in a fixed top posiion with a blue background color */
+#header{
+  float: right;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  background-color: #004B83;
+  padding-right: 0px;
+}
+
+/* Code for hiding bullet points and to put the buttons on the right */
+#header ul{
+  list-style-type: none;
+  float: right;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+/* CSS to put each list item in a single line */
+#header li{
+  display: inline-block;
+}
+
+/* The background changes colour if the user moves the cursor over the title*/
+#header a:hover {
+  background-color: #037EAF;
+}
+
+/* The second section of the list should not be displayed in the menu */
+#header ul ul {
+  display: none;
+}
+
+/* Code to remove the underline from the text and set the text white */
+#header a{
+  text-decoration: none;
+  color: #FFFFFF;
+  display: block;
+  padding: 14px;
+}
+
+/*Moved the heading after the navigation bar and add a logo on the right as
+  a background then added a bottom border instead of an hr that was not in
+  the original web page*/
+#signlanguage{
+  position: relative;
+  top: 55px;
+  background-image: url(https://internal.cs.ncl.ac.uk/modules/2017-18/csc1026/bsl/css/sign_language.png);
+  background-position: 840px ;
+  background-repeat: no-repeat;
+  height: 87px;
+  padding-right: 50px;
+  border-bottom: 10px solid #124C77;
+   line-height: 67px;
+}
+
+/* CSS to move the remaining content after the heading */
+#otherstuff{
+  position: relative;
+  top: 40px;
+}
+
+/* Code for adding a blank space before the text */
+#Introduction{
+  margin-top: 30px;
+}
+
+/* CSS for moving the photos on Flickriver on the right and adding the rounded grey frame  */
+#flick{
+  float: right;
+  background-image: url(https://internal.cs.ncl.ac.uk/modules/2017-18/csc1026/bsl/css/420x370-box.png);
+  background-repeat: no-repeat;
+  padding-right: 30px;
+  padding-bottom: 15px;
+  margin-left: 5px;
+}
+
+/* Code for specifying what should happen if content overflows the section */
+#Linguistics{
+  overflow: auto;
+}
+
+/* Reduces the margin on the top of the title */
+#Linguistics h2{
+  margin-top: 1px;
+}
+
+/* CSS to split the Linguistics section in two parts */
+/*This code define the behaviour for the left part, with a double border frame */
+#left{
+  float: left;
+  width:50% ;
+  font-size: 13px;
+  margin-left: 20px ;
+  border: 3px solid #124C77;
+  border-style: double;
+
+
+}
+
+/* Code to avoid the overflowing of the image*/
+#textinside img{
+  max-width:100%;    }
+
+/* CSS for setting the caption under the image */
+#textinside{
+ text-align: center;
+ border-bottom: 2px solid #124C77;
+ margin-left: 6px;
+ margin-right: 6px;
+        }
+
+/* Placing each image on the left of the relative color description*/
+#SLFamily img {
+  float: left;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+/* All the lowercase letters of words in this class are converted to
+  uppercase letters but in a smaller font size compared to the original
+  uppercase letters in the text */
+.legend{
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+/* Code for moving the text on the right */
+#right{
+  margin-left: 100px;
+  margin-right: 12px;
+  overflow: hidden;
+}
+
+/* CSS for setting the youtube video on the right with a frame  */
+#youtube{
+      float: right;
+      background-image: url(https://internal.cs.ncl.ac.uk/modules/2017-18/csc1026/bsl/css/460x320-box.png);
+      background-repeat: no-repeat;
+      padding-right: 20px;
+      margin-right: 20px;
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-bottom: 20px;
+}
+
+/* Code for moving the video caption in the right place */
+#youtube p{
+    font-size: 13px;
+    text-align: center;
+}
+
+/* Reduces the margin on the top of the title */
+#BritishSignLanguage h2{
+  margin-top: 1px;
+          }
+
+/* Code to divide Letters and Numbers in British Sign Language */
+#Letters{
+  display: block;
+  overflow:auto;
+  border-bottom: 10px solid #124C77;
+}
+
+/* Reduces the margin on the top of the title */
+#Letters h3{
+  margin: 1px;
+}
+
+/*  CSS for setting red color of the "Letters" word*/
+#word {
+  color:#DE1F3E;
+  display: inline;
+          }
+
+/* Code for displaying each "card" in a line with a little margin
+  next to each other with a frame */
+.card {
+  float: left;
+  display: block;
+   margin:10px;
+   border: 1px solid #124C77;
+}
+
+/* CSS for setting the features of the text in the cards
+  such as blue background, white color and the font convertion in uppercase letters */
+.card p {
+  background-color: #124C77;
+  color: white;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-variant: small-caps;
+  font-size: 13px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+/* CSS for fixing overflow */
+#Numbers{
+  display: block;
+  overflow: auto;
+               }
+/* Reduces the title margins */
+#Numbers h3{
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+/* Display the "Number" word in red color */
+#anotherword {
+    color:#DE1F3E;
+    display: inline;
+                          }
+
+/* Code for creating a footer*/
+#footer{
+  text-align: right;
+  font-size: small;
+
+
+   }
